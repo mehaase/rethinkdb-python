@@ -35,12 +35,6 @@ class DriverLogger(object):
         """
 
         super(DriverLogger, self).__init__()
-        log_format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-        logging.basicConfig(format=log_format)
-
-        self.logger = logging.getLogger()
-        self.logger.setLevel(level)
-
         self.write_to_console = False
 
     @staticmethod
